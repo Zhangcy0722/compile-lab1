@@ -39,7 +39,7 @@ ELSE else
 WHILE while
 
 %%
-digits {;}
+int {;}
 float {;}
 ; {;}
 , {;}

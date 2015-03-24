@@ -1,0 +1,8 @@
+test:lex.yy.o
+	gcc -o test lex.yy.o
+lex.yy.o:lexical.l lex.yy.c
+	flex lexical.l
+	gcc lex.yy.c -lfl
+clean:
+	rm -rf test
+	rm -rf *.o
